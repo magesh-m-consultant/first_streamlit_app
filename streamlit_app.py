@@ -38,6 +38,6 @@ streamlit.write('The User entered', fruit_choice)
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 def init_connection():
     return snowflake.connector.connect(**streamlit.secrets["snowflake"])
-conn = init_connection()
+
 
 
